@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+
+<script>
+
+    var id = 1;
+    function onButtonPress() {
+        document.getElementById("btn").innerHTML = "Counter " + id;
+        id++;
+    }
+</script>
+
+<body>
+
+    <button onclick="onButtonPress()" id="btn">Counter 0</button>
+    
+</body>
+</html>
